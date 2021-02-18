@@ -1,0 +1,40 @@
+// h1, h2, h3, h4, h5, h6 { color: unset;display: unset;font-family: unset;font-size: unset;font-weight: unset;margin: 0;padding: 0; }
+a:hover, a:focus, a:active { text-decoration: none; color: none; outline: none; @include transition( all 500ms ease 0s ); }
+input, select, textarea { outline: none; @include appearance( unset ); }
+input:focus, select:focus, textarea:focus { outline: none; @include box_shadow_input(none); }
+input[type=checkbox] { @include appearance( checkbox ); }
+input[type=radio] { @include appearance( radio ); }
+figure { margin: 0; position: relative; z-index: 1; }
+img { max-width: 100%; height: auto; }
+form br { display: none; }
+p { margin-bottom: 5px; }
+.widget p { margin: 0; }
+.form-control:focus { box-shadow: none; }
+.stick { position: fixed; z-index: 999; width: 100%; background: rgba(225,225,225,0.8); }
+.fix-container { width: 1000px; margin: auto; padding-left: 15px; padding-right: 15px; }
+.bao-faq { width: 830px; margin: auto; }
+
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    color: red;
+}
+
+// @font-face{
+//     font-family: 'OpenSans';
+//     src:url('../../dist/fonts/OpenSans.ttf');
+// }
+// @font-face{
+//     font-family: 'OpenSansBold';
+//     src:url('../../dist/fonts/OpenSans-Bold.ttf');
+// }
+// @font-face{
+//     font-family: 'OpenSansExtraBold';
+//     src:url('../../dist/fonts/OpenSans-ExtraBold.ttf');
+// }
+
+
+
+
+
