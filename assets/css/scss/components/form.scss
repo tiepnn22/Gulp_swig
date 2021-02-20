@@ -1,0 +1,41 @@
+//Contact form
+form{
+    br {
+        display: none;
+    }
+    .wpcf7-not-valid-tip {
+        // margin-top: 5px;
+    }
+    .wpcf7-validation-errors, .wpcf7-mail-sent-ng, .wpcf7-mail-sent-ok {
+        border: medium none;
+        color: red;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .wpcf7-mail-sent-ok {
+        color: green;
+    }
+}
+
+//form-faqs
+.form-faqs {
+    input, textarea {
+        width: 100%;
+        border: 1px solid orange;
+        @include border_radius( 4px );
+        padding: 10px;
+        margin: 0 0 30px 0;
+        color: red;
+        font-size: 20px;
+        &:focus {
+            border: 1px solid orange;
+        }
+        &[type=submit] {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            background: orange;
+            width: auto;
+        }
+    }
+}

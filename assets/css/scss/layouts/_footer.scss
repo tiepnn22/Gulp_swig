@@ -1,0 +1,70 @@
+#back-to-top {
+    // background: orange;
+    // bottom: 15px;
+    // color: #fff;
+    // cursor: pointer;
+    // display: none;
+    // padding: 10px 14px;
+    // position: fixed;
+    // left: 15px;
+    // z-index: 99;
+    // @include border_radius( 50% );
+    // @include box_shadow( 0 0 18px 2px );
+
+    // .fa { color: rgb(255, 255, 255); }
+}
+
+#tool__society{
+    position: fixed;
+    bottom: 45px;
+    right: 10px;
+    z-index: 9999;
+    .tool__item{
+        @extend display_flex;
+        @include flex_direction( column );
+        .tool__icon{
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin: 20px 0 0;
+            @include border_radius( 50% );
+            @include animation( zoom 1s infinite );
+            @include animation_direction( alternate-reverse );
+            font-size: 20px;
+            padding: 5px;
+            // overflow: hidden;
+            @extend display_flex;
+            @include align_items( center );
+            @include justify_content( center );
+            color: #fff;
+            background: orange;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+            &.tool__icon_tel {
+                background: #21BD56;
+            }
+            &.tool__icon_zalo {
+                background: #2074C8;
+            }
+            &.tool__icon_mes {
+                background: #007FFF;
+            }
+            &.tool__icon_back {
+                padding: 9px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@keyframes zoom{
+    from {
+        @include box_shadow_two( rgba(16, 128, 199, 0.21) 0px 0px 0px 0px, rgba(16, 128, 199, 0.12) 0px 0px 0px 0px );
+    }
+    to {
+        @include box_shadow_two( rgba(16, 128, 199, 0.21) 0px 0px 0px 5px, rgba(16, 128, 199, 0.12) 0px 0px 0px 10px );
+    }
+}
